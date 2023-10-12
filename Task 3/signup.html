@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Mooli&family=Young+Serif&display=swap" rel="stylesheet">
+    <Style>
+        body{
+            font-family: 'Mooli', sans-serif;
+            position: absolute;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        a{
+            color: #ffb5c4;
+           text-decoration: none;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            background:linear-gradient(#af6480 20%, #f6b2e1 60%);
+            position: relative;
+        }
+        ul{
+            list-style: none;
+        }
+        .main {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           height: 60px;
+           padding: 20px 0;
+           font-size: 13px;
+           background-color: #333;
+        }
+        .main h1{
+            color: #ffb5c4;
+            float: left;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+        .main ul{
+            display: inline;
+        }
+        .main ul li{
+           padding: 10px;
+           margin: 30px;
+           float: right;
+        }
+        .main ul li a{
+           padding-bottom: 2px;
+        }
+        .main ul li a:hover{
+            border-bottom: 2px solid #ffc1cc;
+        }
+        .main ul.menu{
+            flex: 1;
+            margin-left: 20px;
+        }
+        .follow{
+            display: flex;
+            padding: 30px;
+            align-items: center;
+            text-align: center;
+            margin: 30px 0 30px;
+        }
+        .follow *{
+            margin-right: 10px;
+        }
+        .footer{
+            background-color: #333;
+            text-align: center;
+            font-size: 14px;
+            padding: 20px ;
+            margin-top: 80px;
+        }
+        .heading h1{
+            padding: 20px;
+            margin: 30px;
+            text-align: center;
+        }
+        .heading p{
+            margin: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+        .btn{
+            background-color: #333;
+            color: #fff;
+            padding: 5px ;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn:hover{
+            background-color:#fdb3c1;
+            color: #333;
+        }
+        .links h2{
+            text-align: center;
+        }
+        .links p{
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        .links form{
+            right: 50px;
+            padding: 15px;
+        }
+        .links input[type="email"]{
+            padding: 4px;
+            height: 20px;
+            width: 200px;
+            border-radius: 5px;
+            border: 2px solid #333;
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <nav class="main">
+            <h1>Music Player</h1>
+            <ul class="menu">
+                <li><a href="#">Play Your Favorite Songs</a></li>
+                <li><a href="index.html">Playlist</a></li>
+            </ul>
+        </nav>
+        <div class="heading">
+            <h1>Unleash Your Inner DJ</h1>
+            <p>Welcome to Music Player Webapp, where you can manage & enjoy your favorite tunes effortlessly. Dive into the world of music today & experience the joys of creating your own playlists.</p>
+        </div>
+        <div class="links">
+            <h2>Get In The Groove</h2>
+            <p>Stay updated on all things music-related & recive exclusive deals & discounts. Subscribe to our newsletter & let the good vibes roll!</p>
+            <form >
+                <input type="email" placeholder="Enter Email..">
+                <a href="#" class="btn">Subscribe</a>
+            </form>
+        </div>
+
+        <section class="follow">
+            <p>Follow Us : </p>
+            <a href="https://twitter.com">
+                <img src="social-twitter.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="social-linkedin.png" alt="Linkedin">
+            </a>
+        </section>
+
+        <footer class="footer">
+            <p><a href="#">&copy; Music Player Webapp 2023</a></p>
+    </footer>
+    </div>
+</body>
+</html>
